@@ -1,0 +1,331 @@
+
+* {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  
+background: url("image_summer.png") 680px 0px/1240px 1080px no-repeat ;
+}
+.menu-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: row;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+  margin-top: 100px;
+}
+.logo {
+  width: 118px;
+  height: 40px;
+  margin-left: 100px
+}
+.logo_mob {
+  display: none;
+}
+.menu-content{
+  flex: 1 1 auto;
+  margin-top: 14px;
+}
+
+.menu-content a{
+  font-family: Arial;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 28px;
+text-decoration-line: underline;
+color: #131821;
+}
+.menu-content a:hover{color: #4066A5;}
+
+.about{
+  margin: 0 30px 0 113px;
+
+}
+.contact {
+  margin: 0 30px 0 30px;
+  
+  
+}
+.mainpart h1 {
+  font-family: Georgia;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 44px;
+  color: #131821;
+  margin-left:40px;
+}
+.mainpart p{
+  width: 400px;
+  margin: 15px 140px 0 0;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  color: #6A707B;
+  margin-left:40px;
+
+}
+.mainpart hr {
+  position: absolute;
+  width: 4px;
+  height: 70px;
+  left: 100px;
+  top: 539px;
+  background: #4066A5;
+}
+.mainpart {
+  width: 680px;
+  height: 1080px;
+  background: linear-gradient(180deg, #FFFFFF 0%, #F2F5FA 100%);
+  padding: 374px 0 100px 100px;
+}
+
+.mail-input {
+  margin-top: 50px;
+  width: 663px;
+  height: 70px;
+  background: #FFFFFF;
+  border: 1px solid #E3E3E4;
+  border-left: 4px solid #4066A5;
+
+}
+.mail-input input{
+  margin: 23px 0 23px 44px;
+  width: 230px;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #6A707B;
+  border: transparent;
+}
+
+
+.mail-input button {
+  background: url("ic_arrow.svg");
+  width: 24px;
+  height: 14px;
+  border: none;
+  margin: 0 0 0 328px
+}
+
+
+
+.mainpart hr{
+  position: absolute;
+  width: 400px;
+  height: 1px;
+  left: 140px;
+  top: 740px;
+}
+
+.tos {
+  margin-top: 18px;
+}
+.tos a {
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  text-decoration-line: underline;
+  color: #131821;
+}
+.tos a:hover{color: #4066A5;}
+
+.check_input {
+  appearance: none;
+  margin-left: 81px;
+}
+.check_span {
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  margin-left: -44px;
+
+  background-image: url(Base.svg);
+}
+
+.check_input:checked + .check_span{
+  background-image: url(ic_checkmar.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 14px 11px;
+  background-color: #4066A5;
+  border-radius: 3px;
+}
+
+.errors {
+  font-family: Georgia;
+  font-size: 14pt;
+  margin: 15px 0 0 20px ;
+  height: 20px;
+  color: red;
+}
+
+.social {
+  margin: 101px 0 243px 118px ;
+  width: 244px;
+  height: 46px;
+}
+.social div{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 46px;
+  height: 46px;
+  border: 2px solid #131821;
+  border-radius: 23px;
+  opacity: 0.3;
+  transition: .2s ease;
+}
+.social-new div{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 46px;
+  height: 46px;
+  border: 2px solid #131821;
+  border-radius: 23px;
+  opacity: 0.3;
+  transition: .2s ease;
+}
+.social div:hover svg * {
+  fill: #FFFFFF;
+}
+.social-new div:hover svg * {
+  fill: #FFFFFF;
+}
+.fb {
+ margin-right: 20px;
+}
+.fb:hover {
+  background-color: #4267B2;
+  opacity: 1;
+  border-color: transparent;
+  box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+
+}
+.fb:active {
+background-color:#2F4A80;
+}
+
+.insta {
+  margin-right: 20px;
+}
+.insta:hover  {
+  background-color: #C13584;
+  opacity: 1;
+  border-color: transparent;
+  box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+}
+.insta:active {
+background-color:#8F2762;
+}
+
+.twit{
+  margin-right: 20px;
+}
+.twit:hover {
+  background-color: #1DA1F2;
+  opacity: 1;
+  border-color: transparent;
+  box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+}
+.twit:active {
+background-color:#177FBF;
+}
+.youtube{
+  
+}
+.youtube:hover {
+  background-color: #FF0000;
+  opacity: 1;
+  border-color: transparent;
+  box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+}
+.youtube:active {
+background-color:#CC0000;
+}
+
+
+
+
+/* Mainpart ater confirmation */
+
+.container {
+  width: 680px;
+  height: 1080px;
+  background: linear-gradient(180deg, #FFFFFF 0%, #F2F5FA 100%);
+  padding: 0 0 100px 140px; 
+}
+.container hr{
+  width: 400px;
+  height: 1px;
+  margin-left: 0;
+  margin-top: 50px;
+
+}
+.newlogo {
+margin-top: 271px;
+}
+.mainpart-new h1{
+  width: 400px;
+  height: 44px;
+  font-family: Georgia;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 44px;
+  color: #131821;
+  margin-top: 32px;
+
+}
+.mainpart-new p{
+  width: 400px;
+  height: 56px;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  color: #6A707B;
+  margin-top: 20px;
+
+}
+
+
+.social-new {
+  margin: 50px 0 243px 118px ;
+  width: 244px;
+  height: 46px;
+
+}
+.social-new div{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 46px;
+  height: 46px;
+  border: 2px solid #E2E3E4;
+  border-radius: 23px;
+
+}
+.fb {
+ margin-right: 20px;
+}
+.insta {
+  margin-right: 20px;
+}
+.twit{
+  margin-right: 20px;
+}
